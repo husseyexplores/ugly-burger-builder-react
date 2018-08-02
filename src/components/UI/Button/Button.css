@@ -1,0 +1,42 @@
+.Button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+  transition: all .2s ease;
+}
+
+.Button:active {
+  transform: translateY(1px);
+}
+
+/* .Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+} */
+
+.Success {
+  color: #fff;
+  background: #ff0000;
+}
+
+.Success:hover {
+  background: #b90000;
+}
+
+.Cancel {
+  color: #979797;
+  background: rgb(223, 223, 223);
+}
+
+.Cancel:hover {
+  background: rgb(189, 189, 189);
+}

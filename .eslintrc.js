@@ -12,17 +12,16 @@ module.exports = {
     "react",
     "jsx-a11y",
     "import",
-    "prettier"
+    "prettier",
   ],
   "rules": {
     "react/prop-types": [1],
-    "prettier/prettier": "warn",
-    "semi": ["warn", "always"],
+    "semi": [0, "always"],
     "linebreak-style": 0,
-    "prettier/prettier": "warn",
-    "no-console": "warn",
-    "no-unused-vars": "warn",
-    "quotes": ["warn", "single"],
+    "prettier/prettier": 1,
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "quotes": [1, "single"],
     "react/jsx-filename-extension": [1, {
       "extensions": [".js", ".jsx"]
     }],

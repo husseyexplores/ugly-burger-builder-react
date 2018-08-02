@@ -1,0 +1,252 @@
+.BreadTop,
+.BreadBottom,
+.Salad,
+.Cheese,
+.Bacon,
+.Meat {
+  animation: fadeIn .3s;
+  transition: transform .3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.BreadBottom {}
+
+.Meat {}
+
+.Cheese {}
+
+.Salad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bacon {}
+
+.BreadTop {
+  z-index: 20;
+  position: relative;
+}
+
+.Salad {
+  z-index: 18;
+  position: relative;
+}
+
+.Salad+.Salad {}
+
+.Salad div {
+  width: 100%;
+}
+
+.Tomatoes {
+  z-index: 18;
+  position: relative;
+}
+
+.Lettuce {
+  z-index: 16;
+  position: relative;
+}
+
+.Gerkins {
+  z-index: 14;
+  position: relative;
+}
+
+.Bacon {
+  z-index: 16;
+  position: relative;
+}
+
+.Bacon+.Bacon {}
+
+.Cheese {
+  z-index: 14;
+  position: relative;
+}
+
+.Cheese+.Cheese {}
+
+.Meat {
+  z-index: 12;
+  position: relative;
+}
+
+.BreadBottom {
+  z-index: 20;
+  transform: translateY(-32px);
+  margin-bottom: -32px;
+}
+
+@media only screen and (min-width: 319px) {
+  .BreadTop,
+  .BreadBottom,
+  .Salad,
+  .Cheese,
+  .Bacon,
+  .Meat {
+    width: 280px;
+    margin: auto
+  }
+  .Salad {
+    transform: translateY(-45px);
+    margin-bottom: -45px;
+  }
+  .Salad+.Salad {
+    transform: translateY(-60px);
+    margin-bottom: -60px;
+  }
+  .Tomatoes {
+    transform: translateY(35px);
+    margin-top: -35px;
+  }
+  .Lettuce {
+    transform: translateY(35px);
+    margin-top: -35px;
+  }
+  .Gerkins {
+    transform: translateY(-20px);
+    margin-bottom: -20px;
+  }
+  .Bacon {
+    transform: translateY(-62px);
+    margin-bottom: -62px;
+  }
+  .Bacon+.Bacon {
+    transform: translateY(-45px);
+    margin-bottom: -45px;
+  }
+  .Cheese {
+    transform: translateY(-50px);
+    margin-bottom: -50px;
+  }
+  .Cheese+.Cheese {
+    transform: translateY(-70px);
+    margin-bottom: -70px;
+  }
+  .Meat {
+    transform: translateY(-70px);
+    margin-bottom: -70px;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+  .Bacon {
+    transform: translateY(-60px);
+    margin-bottom: -60px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .BreadTop,
+  .BreadBottom,
+  .Salad,
+  .Cheese,
+  .Bacon,
+  .Meat {
+    width: 350px;
+    margin: auto
+  }
+  .Salad {
+    transform: translateY(-40px);
+    margin-bottom: -40px;
+  }
+  .Salad+.Salad {
+    transform: translateY(-65px);
+    margin-bottom: -65px;
+  }
+  .Tomatoes {
+    transform: translateY(30px);
+    margin-top: -30px;
+  }
+  .Lettuce {
+    transform: translateY(20px);
+    margin-top: -30px;
+  }
+  .Gerkins {
+    transform: translateY(-45px);
+    margin-bottom: -45px;
+  }
+  .Bacon {
+    transform: translateY(-75px);
+    margin-bottom: -75px;
+  }
+  .Bacon+.Bacon {
+    transform: translateY(-70px);
+    margin-bottom: -70px;
+  }
+  .Cheese {
+    transform: translateY(-60px);
+    margin-bottom: -60px;
+  }
+  .Cheese+.Cheese {
+    transform: translateY(-90px);
+    margin-bottom: -90px;
+  }
+  .Meat {
+    transform: translateY(-80px);
+    margin-bottom: -90px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .BreadTop,
+  .BreadBottom,
+  .Salad,
+  .Cheese,
+  .Bacon,
+  .Meat {
+    width: 500px;
+    margin: auto
+  }
+  .Salad {
+    transform: translateY(-70px);
+    margin-bottom: -70px;
+  }
+  .Salad+.Salad {
+    transform: translateY(-100px);
+    margin-bottom: -100px;
+  }
+  .Tomatoes {
+    transform: translateY(30px);
+    margin-top: -30px;
+  }
+  .Lettuce {
+    transform: translateY(-18px);
+    margin-top: -18px;
+  }
+  .Gerkins {
+    transform: translateY(-115px);
+    margin-bottom: -115px;
+  }
+  .Bacon {
+    transform: translateY(-100px);
+    margin-bottom: -100px;
+  }
+  .Bacon+.Bacon {
+    transform: translateY(-88px);
+    margin-bottom: -88px;
+  }
+  .Cheese {
+    transform: translateY(-80px);
+    margin-bottom: -80px;
+  }
+  .Cheese+.Cheese {
+    transform: translateY(-120px);
+    margin-bottom: -120px;
+  }
+  .Meat {
+    transform: translateY(-115px);
+    margin-bottom: -150px;
+  }
+}
