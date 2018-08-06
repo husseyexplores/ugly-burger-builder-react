@@ -8,7 +8,10 @@ import Backdrop from '../Backdrop/Backdrop';
 class Modal extends Component {
   // Only renders/updates OrderSummary if modal is shown. Performance stuff
   shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.show !== this.props.show;
+    return (
+      nextProps.show !== this.props.show ||
+      nextProps.children !== this.props.children
+    );
   }
 
   render() {
@@ -30,9 +33,14 @@ class Modal extends Component {
 }
 
 Modal.propTypes = {
-  show: PropTypes.bool.isRequired,
+  show: PropTypes.any,
   modalClosed: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+};
+
+Modal.defaultProps = {
+  show: null,
+  children: null,
 };
 
 export default Modal;

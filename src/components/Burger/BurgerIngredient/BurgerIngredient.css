@@ -17,20 +17,12 @@
   }
 }
 
-.BreadBottom {}
-
-.Meat {}
-
-.Cheese {}
-
 .Salad {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.Bacon {}
 
 .BreadTop {
   z-index: 20;

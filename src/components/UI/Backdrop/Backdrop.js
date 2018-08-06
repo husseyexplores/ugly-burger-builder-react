@@ -12,8 +12,12 @@ class Backdrop extends Component {
 }
 
 Backdrop.propTypes = {
-  show: PropTypes.bool.isRequired,
+  show: PropTypes.any,
   clicked: PropTypes.func.isRequired,
+};
+
+Backdrop.defaultProps = {
+  show: null,
 };
 
 export default Backdrop;

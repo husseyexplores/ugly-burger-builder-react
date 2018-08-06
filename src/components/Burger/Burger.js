@@ -55,8 +55,19 @@ class Burger extends Component {
         return arr.concat(el);
       }, []);
 
-    if (transformedIngredients.length === 0) {
-      transformedIngredients = (
+    const salad = transformedIngredients.filter(x => x.props.type === 'salad');
+    const bacon = transformedIngredients.filter(x => x.props.type === 'bacon');
+    const cheese = transformedIngredients.filter(
+      x => x.props.type === 'cheese'
+    );
+    const meat = transformedIngredients.filter(x => x.props.type === 'meat');
+
+    let sortedIngredients = [...salad, ...bacon, ...cheese, ...meat].filter(
+      el => el !== undefined
+    );
+
+    if (sortedIngredients.length === 0) {
+      sortedIngredients = (
         <p style={{ transform: 'translateY(-20px)' }}>
           Please start adding ingredients!
         </p>
@@ -69,7 +80,7 @@ class Burger extends Component {
         onClick={() => this.styleAndClassesHandler()}
       >
         <BurgerIngredient type="bread-top" />
-        {transformedIngredients}
+        {sortedIngredients}
         <BurgerIngredient type="bread-bottom" />
       </div>
     );
