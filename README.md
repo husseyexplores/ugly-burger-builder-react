@@ -1,6 +1,6 @@
 # Ugly Burger Builder
 
 ## Stack:
-[*] React
-[*] Redux
-[*] Firebase
+* React
+* Redux
+* Firebase
