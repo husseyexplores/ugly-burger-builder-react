@@ -1,0 +1,39 @@
+.ContactInfo {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  background: #e3f7de;
+  padding: 10px 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  font-size: 1.6rem;
+}
+
+.ContactInfo .Input {
+  font-size: 1.6rem;
+  color: #464646;
+  display: block;
+  margin: auto;
+  padding: 7px 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+  outline: none;
+  background: #f3f3f3;
+  transition: all .2s;
+}
+
+.ContactInfo .Input:focus {
+  border: 1px solid rgb(49, 167, 19);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+  .ContactInfo {
+    width: 500px;
+  }
+  .ContactInfo .Input {
+    width: 50%;
+  }
+}

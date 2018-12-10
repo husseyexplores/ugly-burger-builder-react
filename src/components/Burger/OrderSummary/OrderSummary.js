@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Aux from '../../../hoc/Auxx/Auxx';
+//import Aux from '../../../hoc/Auxx/Auxx';
 import Button from '../../UI/Button/Button';
+import classes from './OrderSummary.css';
 
 class OrderSummary extends Component {
   render() {
     const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
+      if (this.props.ingredients[igKey] == 0) return;
       return (
-        <li key={igKey}>
-          <span style={{ textTransform: 'capitalize' }}>{igKey}</span>:{' '}
-          {this.props.ingredients[igKey]}
+        <li key={igKey} className={classes.IngredientWrapper}>
+          <span className={classes.IngredientName}>{igKey}:</span>{' '}
+          <span className={classes.IngredientQty}>
+            <span style={{ fontSize: '1.2rem' }}>x</span>
+            {this.props.ingredients[igKey]}
+          </span>
         </li>
       );
     });
 
     return (
-      <Aux>
+      <div className={classes.OrderSummary}>
         <h3>Your Order</h3>
         <p>A delicious burger with the follwoing ingredients:</p>
         <ul>{ingredientSummary}</ul>
@@ -30,7 +35,7 @@ class OrderSummary extends Component {
         <Button btnType="Success" clicked={this.props.purchaseContinued}>
           CONTINUE
         </Button>
-      </Aux>
+      </div>
     );
   }
 }

@@ -1,0 +1,27 @@
+.OrderSummary ul {
+  list-style: none;
+  margin: 1.2rem 0;
+}
+
+.IngredientWrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.IngredientName {
+  text-transform: capitalize;
+  background: #e8e8e8;
+  padding: 2px .9rem;
+  border-radius: 3px;
+  width: 8.5rem;
+}
+
+.IngredientQty {
+  background: #3e3e3e;
+  padding: 2px .9rem;
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #eaeaea;
+}

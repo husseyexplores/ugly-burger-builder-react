@@ -68,7 +68,7 @@ class Burger extends Component {
 
     if (sortedIngredients.length === 0) {
       sortedIngredients = (
-        <p style={{ transform: 'translateY(-20px)' }}>
+        <p style={{ transform: 'translateY(-20px)', padding: '1rem' }}>
           Please start adding ingredients!
         </p>
       );

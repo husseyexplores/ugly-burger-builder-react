@@ -2,10 +2,43 @@
   text-align: center;
   width: 80%;
   margin: auto;
+  font-size: 1.6rem;
+}
+
+.ButtonsWrapper {
+  margin-top: -260px;
+}
+
+.HeadingMain {
+  margin-bottom: -360px;
+  color: #404040;
+}
+
+.BurgerWrapper {
+  transform: scale(.2);
+  margin: auto;
 }
 
 @media (min-width: 600px) {
   .CheckoutSummary {
     width: 500px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .HeadingMain {
+    margin-bottom: -300px;
+  }
+  .ButtonsWrapper {
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .HeadingMain {
+    margin-bottom: -240px;
+  }
+  .ButtonsWrapper {
+    margin-top: -150px;
   }
 }

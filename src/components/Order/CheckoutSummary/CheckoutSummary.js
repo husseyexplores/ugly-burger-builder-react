@@ -9,15 +9,15 @@ class CheckoutSummary extends Component {
   render() {
     return (
       <div className={classes.CheckoutSummary}>
-        <h1 style={{ marginBottom: '-200px' }}>We hope it tastes well!</h1>
-        <div style={{ margin: 'auto', transform: 'scale(0.5)' }}>
+        <h1 className={classes.HeadingMain}>We hope it tastes well!</h1>
+        <div className={classes.BurgerWrapper}>
           <Burger ingredients={this.props.ingredients} />
         </div>
-        <div style={{ marginTop: '-120px' }}>
-          <Button btnType="Cancel" clicked>
+        <div className={classes.ButtonsWrapper}>
+          <Button btnType="Cancel" clicked={this.props.checkoutCancelled}>
             Cancel
           </Button>
-          <Button btnType="Success" clicked>
+          <Button btnType="Success" clicked={this.props.checkoutContinued}>
             Continue
           </Button>
         </div>

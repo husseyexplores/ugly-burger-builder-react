@@ -1,0 +1,39 @@
+.Order {
+  width: 90%;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  padding: 1rem;
+  margin: 1rem auto;
+  font-size: 1.7rem;
+  color: #404040;
+}
+
+.IngredientWrapper {
+  margin: .5rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.IngredientName {
+  text-transform: capitalize;
+  background: #e8e8e8;
+  padding: 2px .9rem;
+  border-radius: 3px;
+  width: 9rem;
+}
+
+.IngredientQty {
+  background: #3e3e3e;
+  padding: 2px .9rem;
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #eaeaea;
+}
+
+@media (min-width: 600px) {
+  .Order {
+    width: 70%;
+  }
+}

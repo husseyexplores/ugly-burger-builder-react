@@ -1,5 +1,37 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+html {
+  font-size: 62.5%
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
   font-family: "Montserrat", "Lato", "Open Sans", sans-serif;
+  line-height: 1.7;
+  font-size: 1.6rem;
 }

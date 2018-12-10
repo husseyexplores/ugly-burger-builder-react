@@ -1,0 +1,53 @@
+.FieldWrapper {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.Input {
+  font-size: 1.6rem;
+  color: #656565;
+  font-family: inherit;
+  color: inherit;
+  padding: 7px 20px;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .3s;
+}
+
+.Input:focus {
+  outline: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  border-bottom: 3px solid #55c57a;
+}
+
+.Input:focus:invalid,
+.Invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.Input::placeholder {
+  color: #ccc;
+}
+
+.Label {
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-top: 8px;
+  display: block;
+  transition: all .3s;
+  color: rgb(110, 110, 110);
+  font-weight: 700;
+}
+
+.Input:placeholder-shown~.Label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3.6rem);
+  margin-left: 2rem;
+}

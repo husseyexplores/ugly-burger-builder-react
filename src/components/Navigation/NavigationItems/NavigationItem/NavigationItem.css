@@ -1,12 +1,12 @@
 .NavigationItem {
-  margin: 10px 0;
   box-sizing: border-box;
   display: block;
   width: 100%;
 }
 
 .NavigationItem a {
-  color: #fff;
+  color: rgb(46, 46, 46);
+  padding: 10px 0;
   text-decoration: none;
   width: 100%;
   box-sizing: border-box;
