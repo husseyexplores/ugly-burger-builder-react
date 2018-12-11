@@ -13,29 +13,32 @@ const input = props => {
     inputClasses.push(classes.Invalid);
   }
 
-  if (props.type === 'textarea') {
-    inputElement = (
-      <textarea
-        className={inputClasses.join(' ')}
-        placeholder={props.placeholder}
-        type={props.type}
-        name={name}
-        required={isRequired}
-        onChange={props.changed}
-      />
-    );
-  } else {
-    inputElement = (
-      <input
-        className={inputClasses.join(' ')}
-        placeholder={props.placeholder}
-        type={props.type}
-        name={name}
-        required={isRequired}
-        onChange={props.changed}
-        value={props.value}
-      />
-    );
+  switch (props.type) {
+    case 'textarea':
+      inputElement = (
+        <textarea
+          className={inputClasses.join(' ')}
+          placeholder={props.placeholder}
+          type={props.type}
+          name={name}
+          required={isRequired}
+          onChange={props.changed}
+        />
+      );
+      break;
+
+    default:
+      inputElement = (
+        <input
+          className={inputClasses.join(' ')}
+          placeholder={props.placeholder}
+          type={props.type}
+          name={name}
+          required={isRequired}
+          onChange={props.changed}
+          value={props.value}
+        />
+      );
   }
 
   return (
